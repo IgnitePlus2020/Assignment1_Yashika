@@ -18,7 +18,7 @@ public class ArithExp30 {
             char c = expression.charAt(i);
             if (c == ' ') continue;
             else if (Character.isDigit(c)) {
-                digit = c - '0';  //convert character c to integer
+                digit = c - '0';
                 while (i + 1 < expression.length() && Character.isDigit(expression.charAt(i + 1))) {
                     digit = digit * 10 + (expression.charAt(++i) - '0');  
                 }
