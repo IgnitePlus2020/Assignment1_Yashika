@@ -20,7 +20,7 @@ public class ArithExp30 {
             else if (Character.isDigit(c)) {
                 digit = c - '0';  //convert character c to integer
                 while (i + 1 < expression.length() && Character.isDigit(expression.charAt(i + 1))) {
-                    digit = digit * 10 + (expression.charAt(++i) - '0');    //If the value consists of more than one digit
+                    digit = digit * 10 + (expression.charAt(++i) - '0');  
                 }
                 OpndStack.push(digit);
             } else if (isOpeator(c)) {
